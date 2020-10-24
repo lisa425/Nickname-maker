@@ -1,0 +1,103 @@
+
+        body{
+            background-image: url("aboutBack.png");
+            text-align: center;
+            background-size:1680px 975px;
+            font-family: "AppleSDGothicNeo","맑은 고딕","돋움";
+            font-weight: normal;    
+            color: #000000;
+        }
+        /*header*/
+        #title{
+          position: absolute;
+          top:171px;
+          left:505px;
+          font-size: 25px;
+          font-weight: 900;
+          text-align: center;
+          color:#090651;
+  
+        }
+        #subtitle{
+          position: absolute;
+          top:273px;
+          left:520px;
+          font-size: 18px;
+          text-align: center;
+          line-height: 1.5;
+        }
+  
+        /*menu*/
+        #home{
+            position:absolute;
+            top:80px;
+            left:155px;
+            font-size:20px;
+            color:#2f43bc;
+            display: inline;
+            text-decoration: none;
+        }
+        #home:hover{
+            color:#2f43bc;
+            font-weight: bolder;
+        }
+        ul#menu{
+              position: absolute;
+              top:80px;
+              right:130px;
+          }
+          ul#menu li{
+              display: inline;
+          }
+          ul#menu li a{
+              padding:37px;
+              text-decoration: none;
+              font-size: 20px;
+              color:#2f43bc;
+          }
+          ul#menu li a:hover{
+              color: #001699;
+              font-weight: bolder;}
+  
+          /*article*/
+          #input{
+              position: absolute;
+              top:456px;
+              left:462px;
+              font-size:11px;
+              text-align: center;
+              font-weight: 400;
+          }
+          #make{
+              position: absolute;
+              top:478px;
+              left:698px;
+              font-size:11px;
+              text-align: center;
+              font-weight: 400;
+          }
+          #box{
+              position: absolute;
+              top:449px;
+              left:920px;
+              font-size:11px;
+              text-align: center;
+              font-weight: 400;
+          }
+          #good{
+              position: absolute;
+              top:454px;
+              left:1114px;
+              font-size:11px;
+              text-align: center;
+              font-weight: 400;
+          }
+          #start{
+            position: absolute;
+            bottom:116px;
+            left:720px;
+        }
+          #start:hover{
+            transform:scale(1.1);
+        }
+   

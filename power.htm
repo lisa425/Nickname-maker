@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>made Nickname</title>
+    <link rel="stylesheet" href="power.css" >
+    <script>
+        function opacity(id){
+            var dom = document.getElementById(id)
+            
+            if(dom.id == "box"){
+                dom.style.visibility = "hidden";
+            }
+            else {
+                dom.style.visibility = "visible";
+            }
+        }
+        
+        function make(){
+
+            opacity('box');
+            opacity('return');
+
+            var powerList = new Array('스오','빔','짱','칼바람','소환사','파워','대가리',
+            '터줏대감','칼날비','정복자','지배','피바라기','불주먹','행님','결의','바람','불바다');
+            
+            var word = powerList[Math.floor(Math.random()*powerList.length)];
+            var get = document.getElementById('input').value;
+            var nickName = get + word;
+
+            document.getElementById('name').innerText = nickName;
+        }
+    </script>
+</head>
+<body>
+    <header>
+   
+        <a id="home" href="index.html">HOME</a>
+        <ul id="menu">
+          <li><a href="about.htm" >ABOUT</a></li>
+          <li><a href="cute.htm">귀염뽀쨕닉</a></li>
+          <li><a href="power.htm"><strong>서열0위닉</strong></a></li>
+          <li><a href="random.htm">아무말닉</a></li>
+          
+        </ul>
+    </header>
+    <article>
+        <div id="title"><h1>쎄보이는 닉네임을 만들고싶다면?</h1></div>
+        <div id="subtitle"><p>포함하고싶은 단어를 입력하고 생성해보세요.</p></div>
+
+        <form>
+            <input id="input" type="text" value="">
+        </form>
+        <button id="make" onclick="make();"><img src="makeBt.png"></button>
+
+        
+        <img id="box" src="3Dbox.png">
+        <div id="name"></div>
+        <button id="return" onclick="window.location.reload(true);"><img src="return.png"></button>
+    </article>
+    
+</body>
+</html>

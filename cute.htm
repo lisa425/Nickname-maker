@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>made Nickname</title>
+	<link rel="stylesheet" href="cute.css" >
+    <script>
+        function opacity(id){
+            var dom = document.getElementById(id)
+            
+            if(dom.id == "box"){
+                dom.style.visibility = "hidden";
+            }
+            else {
+                dom.style.visibility = "visible";
+            }
+        }
+        
+        function make(){
+
+            opacity('box');
+            opacity('return');
+
+            var cuteList = new Array('빵꾸똥꾸','뀨','링','쭈','으앙','몽글',
+            '쀼','뿌','뿌글','꾸','히융','아기','똥','뚱','뭉뭉','코코','콩');
+            
+            var word = cuteList[Math.floor(Math.random()*cuteList.length)];
+            var get = document.getElementById('input').value;
+            var nickName = get + word;
+
+            document.getElementById('name').innerText = nickName;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a id="home" href="index.html">HOME</a>
+        <ul id="menu">
+            <li><a href="about.htm" >ABOUT</a></li>
+            <li><a href="cute.htm"><strong>귀염뽀쨕닉</strong></a></li>
+            <li><a href="power.htm">서열0위닉</a></li>
+            <li><a href="random.htm">아무말닉</a></li>  
+        </ul>
+    </header>
+    
+    <article>
+        <div id="title"><h1>깜찍한 닉네임을 만들고싶다면?</h1></div>
+        <div id="subtitle"><p>포함하고싶은 단어를 입력하고 생성해보세요.</p></div> 
+        
+        <form>
+            <input id="input" type="text" value="">
+        </form>
+        <button id="make" onclick="make();"><img src="makeBt.png"></button>
+
+        <img id="box" src="3Dbox.png">
+        <div id="name"></div>
+        <button id="return" onclick="window.location.reload(true);"><img src="return.png"></button>
+    </article>
+    
+</body>
+</html>
